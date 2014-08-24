@@ -28,8 +28,7 @@ cacheSolve <- function(x, ...) {
         inverseIsNull <- is.null(x$getinverse())
         message("Is inverse null? ", inverseIsNull)
         if (!inverseIsNull)  {
-                message("Getting cached data for inverse...")
-                
+                message("Getting cached data for inverse...")               
         } else {
                 message("Calculating the inverse...")
                 x$setinverse()
